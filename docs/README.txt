@@ -14,13 +14,13 @@ Setting Up Your VHOST
 The following is a sample VHOST you might want to consider for your project.
 
 <VirtualHost *:80>
-   DocumentRoot "D:/serverlocal/dev/trunk/src/personal-site/public"
-   ServerName .local
+   DocumentRoot "/Users/user/Sites/github/sandbox/public"
+   ServerName sandbox.local
 
    # This should be omitted in the production environment
    SetEnv APPLICATION_ENV development
 
-   <Directory "D:/serverlocal/dev/trunk/src/personal-site/public">
+   <Directory "/Users/user/Sites/github/sandbox/public">
        Options Indexes MultiViews FollowSymLinks
        AllowOverride All
        Order allow,deny
